@@ -39,3 +39,6 @@ header .header-icons-container .header-icons{
     justify-content: space-evenly;
     justify-self: end;
 }
+header .header-icons span{
+    color: white;
+}
