@@ -39,7 +39,7 @@ a:hover {
 
 header {
     width: 100%;
-    height: 140px;
+    height: 100px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     background: linear-gradient(135deg, #47cfac 0%, #37a39c 100%);
@@ -173,7 +173,7 @@ nav .profile-link a:hover {
 
 .blogs-news-container {
     background-color: #e6e9ed;
-    padding: 0 50px 40px;
+    padding: 0 50px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -185,6 +185,7 @@ nav .profile-link a:hover {
 }
 
 .blogs-news-img-container {
+    margin-top: 1rem;
     grid-column: 1;
 }
 
@@ -198,6 +199,7 @@ nav .profile-link a:hover {
 }
 
 .blogs-news-info-container {
+    margin-top: 1.9rem;
     font: 200 2rem 'Roboto', sans-serif;
     grid-column: 2;
 }
@@ -255,15 +257,20 @@ nav .profile-link a:hover {
 }
 
 footer {
-    width: 100%;
-    height: 80px;
+    position: fixed;
+    bottom: 0; /* Ensure the footer is fixed at the bottom */
+    left: 0; /* Ensure the footer starts from the left edge */
+    width: 100%; /* Ensure the footer spans the full width */
     background-color: #22272d;
-    border-top: 35px solid #47cfac;
+    border-top: 2px solid #47cfac;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 15px; /* You can adjust the height as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+
 
 footer p {
     color: white;
@@ -277,13 +284,13 @@ footer p {
 }
 
 .blogpost-img-container {
-    margin: 10px 50px 40px;
+    margin: 10px 50px 10px;
     width: 40%;
     /* padding: 0 50px 40px; */
 }
 
 .blogpost-img-container img {
-    width: 100%;
+    width: 50%;
 }
 
 .blogpost-main-container {
@@ -333,6 +340,7 @@ footer p {
 }
 
 .contact-main-container img {
+    margin-top: 1rem;
     width: 12%;
 }
 
